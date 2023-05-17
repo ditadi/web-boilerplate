@@ -1,5 +1,5 @@
 import { UserButton } from '@clerk/nextjs';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger, Button, Checkbox, Input } from 'ui';
+import { Checkbox } from 'ui';
 
 export default function Home() {
   return (
@@ -8,9 +8,18 @@ export default function Home() {
       <UserButton />
       <div className="flex items-center justify-center flex-col">
         <div className="flex  w-full max-w-sm items-center space-x-2">
-          <Button variant="destructive" size={'lg'}>
-            Secondary
-          </Button>
+          <div className="items-top flex space-x-2">
+            <Checkbox id="terms1" />
+            <div className="grid gap-1.5 leading-none">
+              <label
+                htmlFor="terms1"
+                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              >
+                Accept terms and conditions
+              </label>
+              <p className="text-sm text-muted-foreground">You agree to our Terms of Service and Privacy Policy.</p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
