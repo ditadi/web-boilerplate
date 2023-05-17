@@ -40,7 +40,7 @@
     "prettier": "^2.5.1",
     "prop-types": "^15.8.1",
     "storybook": "^7.0.12",
-    "turbo": "^1.9.4",
+    "turbo": "^1.9.6",
     "vite": "^4.3.6"
   },
   "packageManager": "pnpm@7.15.0",
