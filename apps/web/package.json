@@ -13,7 +13,6 @@
     "ui": "*"
   },
   "devDependencies": {
-    "eslint-config-custom": "*",
-    "tsconfig": "*"
+    "eslint-config-custom": "*"
   }
 }
