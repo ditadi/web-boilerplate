@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "config-tailwind": "*",
-    "eslint-config-custom": "*"
+    "eslint-config-custom": "*",
+    "tsup": "^6.7.0"
   }
 }
