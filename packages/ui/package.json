@@ -1,8 +1,8 @@
 {
   "name": "ui",
   "version": "0.0.0",
-  "types": "./index.tsx",
-  "main": "./index.tsx",
+  "types": "./index.ts",
+  "main": "./index.ts",
   "license": "MIT",
   "scripts": {
     "check-types": "tsc --noEmit",
@@ -11,7 +11,7 @@
   "devDependencies": {
     "config-tailwind": "*",
     "eslint-config-custom": "*",
-    "tsconfig": "*",
+    "config-tsconfig": "*",
     "tsup": "^6.7.0"
   }
 }
