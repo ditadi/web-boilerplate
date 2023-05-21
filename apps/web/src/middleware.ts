@@ -6,6 +6,8 @@ export default authMiddleware({
     if (req.nextUrl.pathname === '/') {
       const dashboardURL = new URL('/dashboard', req.url);
       return NextResponse.redirect(dashboardURL);
+    } else {
+      return NextResponse.next();
     }
   },
   debug: true,
