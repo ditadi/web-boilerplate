@@ -1,8 +1,6 @@
 import { authMiddleware } from '@clerk/nextjs';
 import { NextRequest, NextResponse } from 'next/server';
 
-const publicRoutes = ['/sign-in', '/sign-up'];
-
 export default authMiddleware({
   beforeAuth: (req: NextRequest) => {
     if (req.nextUrl.pathname === '/') {
@@ -10,7 +8,7 @@ export default authMiddleware({
       return NextResponse.redirect(dashboardURL);
     }
   },
-  publicRoutes,
+  debug: true,
 });
 
 export const config = {
