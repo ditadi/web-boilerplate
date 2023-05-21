@@ -1,6 +1,6 @@
 import { UserButton } from '@clerk/nextjs';
 import { createPost, getPosts } from './_actions';
-import { Feed } from '../../components/feed/feed';
+import { Feed } from '../../components/feed/Feed';
 
 export default async function Home() {
   const posts = await getPosts();

@@ -14,9 +14,8 @@
 
 #### <b>UI Framework</b>: Tailwind
 
-#### <b>ORM</b>: Drizzle 
+#### <b>ORM</b>: Drizzle
 
-#### <b>Authentication</b>: Clerk 
+#### <b>Authentication</b>: Clerk
 
 #### <b> Development Practices </b>: Eslint, Prettier + CC + Husky
-
