@@ -1,18 +1,14 @@
-import { authMiddleware } from "@clerk/nextjs";
-import { NextResponse } from "next/server";
+import { authMiddleware } from '@clerk/nextjs';
+import { NextRequest, NextResponse } from 'next/server';
 
 export default authMiddleware({
-	async afterAuth(auth, req) {
-		if (!auth.userId && !auth.isPublicRoute) {
-			const signInUrl = new URL('/sign-in', req.url)
-			signInUrl.searchParams.set('redirect_url', req.url)
-			return NextResponse.redirect(signInUrl)
+	beforeAuth: (req: NextRequest) => {
+		if (req.nextUrl.pathname === '/') {
+			const dashboardURL = new URL('/dashboard', req.url);
+			return NextResponse.redirect(dashboardURL);
+		} else {
+			return NextResponse.next();
 		}
-
-		return NextResponse.next()
 	},
+	debug: true,
 });
-
-export const config = {
-	matcher: ["/((?!.*\\..*|_next).*)", "/", "/(api|trpc)(.*)"],
-};
