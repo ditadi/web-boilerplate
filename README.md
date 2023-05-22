@@ -1,21 +1,21 @@
-# Ditadi Boilerplate
+## Ditadi Boilerplate
 
-### Frameworks and Libraries
+Hello, I created this repo to test and try all new stuffs in web development.
 
-#### <b>Repo Management</b>: Turborepo
+Web Development is moving foward blaziling-fast and new techniquies and libraries are borning all day.
 
-#### <b>Framework</b>: NextJS 13 with App Routing
+Maybe this repo help you if you trying to set up:
 
-#### <b>Bundler</b>: Turbopack
+- Turborepo
+- NextJS App Routing
+- Tailwind
+- shadcn/UI
+- UseOptimizely
+- React Server Components
+- Drizzle
+- Clerk
+- Eslint, Prettier, CC, Husky
 
-#### <b>Back-End</b>: Rust using Rust-Compiler in Vercel Serverless
+I will continue updating this repo with new things, maybe you can suggest :)
 
-#### <b>UI Development</b>: Storybook
-
-#### <b>UI Framework</b>: Tailwind
-
-#### <b>ORM</b>: Drizzle
-
-#### <b>Authentication</b>: Clerk
-
-#### <b> Development Practices </b>: Eslint, Prettier + CC + Husky
+**Feel free to clone, test, or maybe start as the initial point of your new project.**
