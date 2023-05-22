@@ -10,7 +10,7 @@ Maybe this repo help you if you trying to set up:
 - NextJS App Routing
 - Tailwind
 - shadcn/UI
-- UseOptimizely
+- useOptimistic
 - React Server Components
 - Drizzle
 - Clerk
