@@ -1,12 +1,12 @@
 {
   "version": "5",
-  "dialect": "pg",
+  "dialect": "sqlite",
   "entries": [
     {
       "idx": 0,
       "version": "5",
-      "when": 1684503035131,
-      "tag": "0000_curvy_kid_colt",
+      "when": 1684955144014,
+      "tag": "0000_flowery_paladin",
       "breakpoints": false
     }
   ]

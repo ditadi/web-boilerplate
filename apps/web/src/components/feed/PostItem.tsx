@@ -10,9 +10,9 @@ export function PostItem({ post }: { post: PostEntity }) {
         <div className="flex flex-row items-center gap-5 w-full">
           <div className="flex flex-[0.8] items-center gap-5">
             <Avatar>
-              <AvatarImage src={post.author?.profileImageUrl} />
+              <AvatarImage src={post.author.picture} />
             </Avatar>
-            <CardDescription>{post.author?.firstName}</CardDescription>
+            <CardDescription>{post.author.name}</CardDescription>
           </div>
           <div className="flex flex-[0.2]">
             <CardDescription>{getRelativeTime(post.createdAt.getTime())}</CardDescription>
