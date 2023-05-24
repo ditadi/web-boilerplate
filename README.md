@@ -13,6 +13,7 @@ Maybe this repo help you if you trying to set up:
 - useOptimistic
 - React Server Components
 - Drizzle
+- TursoDB
 - Clerk
 - Server Actions
 - Eslint, Prettier, CC, Husky
