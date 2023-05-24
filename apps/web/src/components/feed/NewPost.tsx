@@ -26,7 +26,7 @@ export function NewPost({
         if (content) {
           formRef.current?.reset();
           inputRef?.current?.focus();
-          updateUIWithNewPost({ id: 0, createdAt: new Date(), content: content, authorId: '13' });
+          updateUIWithNewPost({ id: 0, createdAt: new Date(), content: content, author: { id: 0 } });
           await createPost(formData);
         }
       }}
