@@ -40,14 +40,14 @@ TODO:
   </br>
 
 <br>2: Create the Database</br>
-`turso db create {{databa_name}}`</br>
-`turso db show {{databa_name}}`</br>
+`turso db create {{database_name}}`</br>
+`turso db show {{database_name}}`</br>
 
 Copy the DATABASE_URL generated above to store on .env below.
 </br></br>
 
 3: Create the Auth Token</br>
-`turso db tokens create {{databa_name}} -e none`</br>
+`turso db tokens create {{database_name}} -e none`</br>
 Copy the token generate above to store on .env below.
 </br>
 </br>
