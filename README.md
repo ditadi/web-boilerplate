@@ -55,10 +55,20 @@ Copy the token generate above to store on .env below.
 <b>ClerkJS:</b></br>
 1: Create an account on Clerk (https://clerk.com) and copy the
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY and CLERK_SECRET_KEY.
-</br></br>
+</br>
 2: On Clerk Path, add the same configurations below <i>(Maybe is not necessary)</i>
 
-## 2: Create .env
+## 2: Migration
+
+You should create and run the migrations to create your database tables.</br></br>
+<b>1: Generate the Migration</b></br>
+```cd apps/web```</br></br>
+```npx drizzle-kit generate:sqlite```</br></br>
+<b>2: Push to DB</b></br>
+```turso db shell {{database_name}} < migrations/{{migration_file}}.sql```
+</br>
+
+## 3: Create .env
 
 Create .env file on the root and put the keys above.
 
