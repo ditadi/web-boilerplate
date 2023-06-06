@@ -1,3 +1,3 @@
-export default function Page({ params }) {
-  return null;
+export default function Page() {
+  return
 }

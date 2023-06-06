@@ -12,15 +12,11 @@ export function EditPost() {
   const formRef = React.useRef<HTMLFormElement>(null);
   const inputRef = React.useRef<HTMLFormElement>(null);
 
-  React.useEffect(() => {
-    inputRef?.current?.focus();
-  }, [inputRef.current]);
-
   return (
     <Dialog open={true} onOpenChange={() => router.back()}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Let's edit your post</DialogTitle>
+          <DialogTitle>Lets edit your post</DialogTitle>
         </DialogHeader>
         <form
           action={async (formData: FormData) => {
