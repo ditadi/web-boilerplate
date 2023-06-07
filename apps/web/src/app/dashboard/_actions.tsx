@@ -3,9 +3,8 @@
 import { revalidatePath } from 'next/cache';
 import { db } from '../../db/adapter';
 import { PostEntity, postParser, posts, users } from '../../models/schema';
-import { desc, eq, sql } from 'drizzle-orm';
+import { desc, eq } from 'drizzle-orm';
 import { auth } from '@clerk/nextjs';
-import { cache } from 'react';
 
 export async function createPost(props: FormData) {
   const postContent = props.get('content') as string;
@@ -44,6 +43,24 @@ export async function getPosts(): Promise<PostEntity[] | undefined> {
     const postsData = postParser(rawPosts);
 
     return postsData;
+  } catch (e) {
+    console.log(e);
+  }
+}
+
+export async function deletePost(postId: number) {
+  try {
+    await db.delete(posts).where(eq(posts.id, postId)).run();
+    revalidatePath('/');
+  } catch (e) {
+    console.log(e);
+  }
+}
+
+export async function updatePost(postId: number, content: string) {
+  try {
+    await db.update(posts).set({ content: content }).where(eq(posts.id, postId)).run();
+    revalidatePath('/');
   } catch (e) {
     console.log(e);
   }

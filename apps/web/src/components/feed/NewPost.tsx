@@ -34,7 +34,7 @@ export function NewPost({
     >
       <div className="flex gap-5 flex-row">
         <Input placeholder="Post Content" name="content" />
-        <SaveButton label="Create Post" />
+        <SaveButton label="Create Post" size="large" />
       </div>
     </form>
   );
