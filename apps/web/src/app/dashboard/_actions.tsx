@@ -60,7 +60,7 @@ export async function deletePost(postId: number) {
 export async function updatePost(postId: number, content: string) {
   try {
     await db.update(posts).set({ content: content }).where(eq(posts.id, postId)).run();
-    revalidatePath('dashboard');
+    revalidatePath('/');
   } catch (e) {
     console.log(e);
   }
