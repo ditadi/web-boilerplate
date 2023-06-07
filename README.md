@@ -7,15 +7,16 @@ Web Development is moving forward blazing-fast and new techniques and libraries 
 Maybe this repo help you if you trying to set up:
 
 - Turborepo
-- NextJS App Routing
+- NextJS App Routing (w/ Parallel Routing)
+- Server Actions
+- useOptimistic
+- useFormStatus
+- React Server Components
 - Tailwind
 - shadcn/UI
-- useOptimistic
-- React Server Components
 - Drizzle
 - TursoDB
 - Clerk
-- Server Actions
 - Eslint, Prettier, CC, Husky
 
 I will continue updating this repo with new things, maybe you can suggest :)
